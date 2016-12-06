@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LCScheduleData" Class="ClientInfoDataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LCCSWORK002\SQLEXPRESS;Initial Catalog=LCScheduleData;Integrated Security=True" SettingsObjectName="LCScheduler.Properties.Settings" SettingsPropertyName="LCScheduleDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ProgressNote" Member="ProgressNotes">
+    <Type Name="ProgressNote">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClientId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfService" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SessionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeStarted" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeEnded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NoteType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NextSession" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TreatmentGoalAddressed" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Interventions" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ClientResponse" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HomeworkAssignedToday" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HomeworkCompletedLastSession" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Appearance" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Behavior" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MoodAffect" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cognitions" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DangerToOthers" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DescribeDanger" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
